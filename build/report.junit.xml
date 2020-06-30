@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="1.042863">
+    <testsuite name="Test Suite" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="1.042863">
+      <testsuite name="Vdrnoyan\TenantModelFilter\Tests\ExampleTest" file="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/tests/ExampleTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="1.042863">
+        <testcase name="can_create_domain" class="Vdrnoyan\TenantModelFilter\Tests\ExampleTest" classname="Vdrnoyan.TenantModelFilter.Tests.ExampleTest" file="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/tests/ExampleTest.php" line="21" assertions="0" time="1.042863">
+          <error type="ErrorException">Vdrnoyan\TenantModelFilter\Tests\ExampleTest::can_create_domain
+ErrorException: Array to string conversion
+
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Support/Str.php:449
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/QueryException.php:57
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/QueryException.php:40
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Connection.php:672
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Connection.php:631
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Connection.php:465
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Connection.php:417
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php:32
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2772
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:1403
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:900
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:865
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:728
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:767
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Support/helpers.php:433
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:768
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1732
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1744
+/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/tests/ExampleTest.php:23
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

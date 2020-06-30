@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1593188451">
+  <project timestamp="1593188451">
+    <package name="Vdrnoyan\TenantModelFilter">
+      <file name="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/src/Domain.php">
+        <class name="Vdrnoyan\TenantModelFilter\Domain" namespace="Vdrnoyan\TenantModelFilter">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/src/TenantModelFilter.php">
+        <class name="Vdrnoyan\TenantModelFilter\TenantModelFilter" namespace="Vdrnoyan\TenantModelFilter">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/src/TenantModelFilterFacade.php">
+        <class name="Vdrnoyan\TenantModelFilter\TenantModelFilterFacade" namespace="Vdrnoyan\TenantModelFilter">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="17" type="method" name="getFacadeAccessor" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <metrics loc="21" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="/Users/vahan/Documents/tenant-model-filter/tenant-model-filter/src/TenantModelFilterServiceProvider.php">
+        <class name="Vdrnoyan\TenantModelFilter\TenantModelFilterServiceProvider" namespace="Vdrnoyan\TenantModelFilter">
+          <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="boot" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="49" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <metrics loc="60" ncloc="20" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="4" loc="99" ncloc="49" classes="2" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="15" coveredelements="0"/>
+  </project>
+</coverage>
