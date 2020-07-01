@@ -66,7 +66,7 @@ If you discover any security related issues, please email v.drnoyan@gmail.com in
 
 ## Credits
 
-- [Vahan](https://github.com/vdrnoyan)
+- [Vahan](https://github.com/vahandrnoyan)
 - [All Contributors](../../contributors)
 
 ## License
