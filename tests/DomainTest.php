@@ -156,7 +156,7 @@ class DomainTest extends TestCase
         $item3 = Item::create(['name'=>'tester3']);
         $item4 = Item::create(['name'=>'tester4']);
 
-        $items2 = Item::withDomain()->paginate(2);
+        $items2 = Item::withDomain()->paginate(4);
 
 
         $this->assertEquals('tester3', $items2->first()->name);
