@@ -1,5 +1,5 @@
 # Per domian filterable models package
-This is lightweight implemntation of multidomain setup. With this package you can create domains, and have automatically per domain filtered models with very easy implementation.
+This is lightweight implemntation of multidomain setup for Laravel. With this package you can create domains, and have automatically per domain filtered models with very easy implementation.
 ## Installation
 
 You can install the package via composer:
