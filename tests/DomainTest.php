@@ -94,9 +94,9 @@ class DomainTest extends TestCase
         app()->make(DomainMakerInterface::class)->makeCurrent($domain->id);
 
 
+
+
         $item = Item::create(['name'=>'tester']);
-
-
         $this->assertDatabaseHas('filterables', [
             'filterables_id' => $item->id,
             'filterables_type' => get_class($item),

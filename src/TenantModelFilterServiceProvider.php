@@ -46,7 +46,7 @@ class TenantModelFilterServiceProvider extends ServiceProvider
 
         Collection::macro('onlyForThisDomain', function () {
             return $this->filter(function ($value) {
-                return $value->domains()->find(currentDomain()->id) !== null;
+                return $value->getRelation('domains')->first()['id'] === currentDomain()->id;
             });
         });
     }
