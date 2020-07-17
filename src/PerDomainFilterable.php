@@ -26,4 +26,13 @@ trait PerDomainFilterable
     {
         return $this->morphToMany(Domain::class, 'filterables');
     }
+    public function scopeWithDomain($query)
+    {
+        return  $query
+                ->where('filterables.domain_id', '=', currentDomain()->id)
+                ->where( 'filterables.filterables_type', '=',get_class($this))
+                ->join('filterables', 'filterables.filterables_id', '=', $this->getTable().'.'.$this->getKeyName());
+
+
+    }
 }

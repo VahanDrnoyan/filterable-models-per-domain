@@ -136,6 +136,35 @@ class DomainTest extends TestCase
 
     }
     /** @test */
+    public function it_asserts_paginate_returns_only_domain_specific_values()
+    {
+        $this->withoutExceptionHandling();
+
+        $domain = Domain::create(['domain'=>'tenant-model-1.test', 'data'=>123]);
+        app()->make(DomainMakerInterface::class)->makeCurrent($domain->id);
+        $item1 = Item::create(['name'=>'tester1']);
+        $item2 = Item::create(['name'=>'tester2']);
+
+
+        $items1 = Item::paginate(2);
+        $this->assertEquals('tester1', $items1->first()->name);
+        $this->assertEquals('tester2', $items1->last()->name);
+
+        $domain2 = Domain::create(['domain'=>'tenant-model-2.test', 'data'=>123]);
+        app()->make(DomainMakerInterface::class)->makeCurrent($domain2->id);
+
+        $item3 = Item::create(['name'=>'tester3']);
+        $item4 = Item::create(['name'=>'tester4']);
+
+        $items2 = Item::withDomain()->paginate(2);
+
+
+        $this->assertEquals('tester3', $items2->first()->name);
+        $this->assertEquals('tester4', $items2->last()->name);
+        $this->assertCount(2, $items2);
+
+    }
+    /** @test */
     public function it_can_store_domains_data_as_empty_collumn()
     {
         Domain::create(['domain'=>'tenant-model-1.test', 'data'=>NULL]);
