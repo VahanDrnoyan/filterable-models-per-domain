@@ -46,6 +46,10 @@ Use following code to retrive domain specific items from database.
 ``` php
 $items = App\Item::all()->onlyForThisDomain();
 ```
+Beside the Collection filter you have also Eloquent query scope filter to use with methods like paginate. 'withDomain' method will ensure you have loaded only domain relevant items in your page, instead of filtering it after load, like it does Collection's 'onlyForThisDomain' method.  
+```php
+Item::withDomain()->paginate(2);
+```
 ### Testing
 
 ``` bash
