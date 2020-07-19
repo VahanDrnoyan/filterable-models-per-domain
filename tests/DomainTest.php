@@ -173,5 +173,29 @@ class DomainTest extends TestCase
             'data' => NULL
         ]);
     }
+    /** @test */
+    public function it_assert_domain_specific_entries_are_accessible_from_diomain_model()
+    {
+        $this->withoutExceptionHandling();
+
+        $domain = Domain::create(['domain'=>'tenant-model-1.test', 'data'=>123]);
+        app()->make(DomainMakerInterface::class)->makeCurrent($domain->id);
+        $item1 = Item::create(['name'=>'tester1']);
+        $item2 = Item::create(['name'=>'tester2']);
+        $domain2 = Domain::create(['domain'=>'tenant-model-2.test', 'data'=>123]);
+        app()->make(DomainMakerInterface::class)->makeCurrent($domain2->id);
+        $item3 = Item::create(['name'=>'tester3']);
+        $item4 = Item::create(['name'=>'tester4']);
+
+
+        $perDomain = currentDomain()->filterOwn(Item::class)->get();
+
+
+
+        $this->assertEquals('tester3', $perDomain->first()->name);
+        $this->assertEquals('tester4', $perDomain->last()->name);
+        $this->assertCount(2, $perDomain);
+
+    }
 
 }

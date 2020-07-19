@@ -12,4 +12,7 @@ class Domain extends Model
     protected $casts = [
         'data' => 'array',
     ];
+    public function filterOwn($className){
+        return $this->morphedByMany($className, 'filterables');
+    }
 }
