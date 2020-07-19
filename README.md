@@ -50,6 +50,10 @@ Beside the Collection filter you have also Eloquent query scope filter to use wi
 ```php
 Item::withDomain()->paginate(2);
 ```
+Domain specific items can be also retrieved from current, or any domain models.
+```php
+currentDomain()->filterOwn(Item::class)->get();
+```
 ### Testing
 
 ``` bash
